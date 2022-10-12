@@ -6,4 +6,83 @@
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-items {
+  height: 80px;
+  padding: 0 50px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.nav-items a {
+  padding: 0 25px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+.nav-items a:hover {
+  color: #09f;
+}
+.nav-items .nav-items-left {
+  display: flex;
+  align-items: center;
+}
+.nav-items .nav-items-left i {
+  margin-right: 20px;
+  font-size: 45px;
+  color: #09f;
+}
+.nav-items .nav-items-left input {
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.057);
+  border: 1px solid rgba(0, 0, 0, 0.141);
+  border-radius: 8px;
+}
+.nav-items .sign-up-btn {
+  height: 45px;
+  width: 120px;
+  font-size: 16px;
+  background-color: #09f;
+  border: 1px solid #09f;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.nav-items .sign-up-btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: #09f;
+  cursor: pointer;
+}
+
+.burger-ico {
+  display: block;
+  margin-right: auto;
+  padding: 0 30px;
+  line-height: 60px;
+  font-size: 30px;
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.burger-ico:hover {
+  color: #09f;
+}
+
+@media (min-width: 768px) {
+  .burger-ico {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
