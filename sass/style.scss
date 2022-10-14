@@ -111,10 +111,13 @@ body {
 
 		&:hover {
 			background-color: whitesmoke;
+			border-radius: 8px;
+			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.085);
 		}
 
 		h3 {
 			font-size: 16px;
+			margin-bottom: 10px;
 		}
 	
 		img {
@@ -128,6 +131,10 @@ body {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+		}
+
+		.product-item-date {
+			color: red;
 		}
 	}
 }
