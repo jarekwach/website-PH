@@ -109,8 +109,9 @@ body {
   margin-bottom: 10px;
 }
 .products .product-box img {
+  padding-top: 5px;
   width: 82px;
-  height: 82px;
+  height: 86px;
   margin: 0 20px 0 10px;
 }
 .products .product-box .product-item-box {
