@@ -97,17 +97,24 @@ body {
   display: flex;
   margin-left: 20px;
   margin: 24px 0;
-  justify-content: space-around;
   transition: all 0.5s;
 }
 .products .product-box:hover {
   background-color: whitesmoke;
 }
+.products .product-box h3 {
+  font-size: 16px;
+}
 .products .product-box img {
-  display: flex;
   width: 82px;
   height: 82px;
   margin: 0 20px 0 10px;
+}
+.products .product-box .product-item-box {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 992px) {
