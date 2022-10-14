@@ -14,45 +14,11 @@ body {
   max-width: 1200px;
 }
 
-.nav-mobile {
+.nav-items {
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
-}
-.nav-mobile .burger-ico {
-  padding: 0 30px;
-  font-size: 40px;
-  background: none;
-  color: black;
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-.nav-mobile .burger-ico:hover {
-  color: #09f;
-}
-.nav-mobile .fa-dice-d20 {
-  font-size: 45px;
-  color: #09f;
-}
-.nav-mobile a {
-  padding: 0 25px;
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s;
-}
-.nav-mobile a:hover {
-  color: #09f;
-}
-
-.nav-items {
-  height: 80px;
-  padding: 0 50px;
-  display: none;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid black;
 }
 .nav-items a {
@@ -64,31 +30,50 @@ body {
 .nav-items a:hover {
   color: #09f;
 }
-.nav-items .nav-items-left {
-  display: flex;
-  align-items: center;
-}
-.nav-items .nav-items-left i {
-  margin-right: 20px;
+.nav-items .logo-ico {
   font-size: 45px;
   color: #09f;
 }
-.nav-items .nav-items-left input {
+.nav-items .burger-ico {
+  padding: 0 30px;
+  font-size: 40px;
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.nav-items .burger-ico:hover {
+  color: #09f;
+}
+
+.nav-desktop {
+  display: none;
+}
+.nav-desktop .nav-items-left {
+  display: flex;
+  align-items: center;
+}
+.nav-desktop .nav-items-left .logo-ico {
+  margin: 0 25px;
+}
+.nav-desktop .nav-items-left input {
   height: 35px;
   background-color: rgba(0, 0, 0, 0.057);
   border: 1px solid rgba(0, 0, 0, 0.141);
   border-radius: 8px;
 }
-.nav-items .sign-up-btn {
+.nav-desktop .sign-up-btn {
   height: 45px;
   width: 120px;
+  margin-right: 50px;
   font-size: 16px;
   background-color: #09f;
   border: 1px solid #09f;
   border-radius: 8px;
   transition: all 0.3s;
 }
-.nav-items .sign-up-btn:hover {
+.nav-desktop .sign-up-btn:hover {
   background-color: white;
   border: 1px solid black;
   color: #09f;
@@ -99,7 +84,7 @@ body {
   .nav-mobile {
     display: none;
   }
-  .nav-items {
+  .nav-desktop {
     display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

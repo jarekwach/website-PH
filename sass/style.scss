@@ -14,12 +14,28 @@ body {
 	max-width: 1200px;
 }
 
-.nav-mobile {
+.nav-items {
 	height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid black;
+
+	a {
+		padding: 0 25px;
+		text-decoration: none;
+		color: black;
+		transition: color 0.3s;
+
+		&:hover {
+			color: #09f;
+		}
+	}
+
+	.logo-ico {
+		font-size: 45px;
+		color: #09f;
+	}
 
 	.burger-ico {
 		padding: 0 30px;
@@ -34,52 +50,18 @@ body {
 			color: #09f;
 		}
 	}
-
-	.fa-dice-d20 {
-		font-size: 45px;
-		color: #09f;
-	}
-
-	a {
-		padding: 0 25px;
-		text-decoration: none;
-		color: black;
-		transition: color 0.3s;
-
-		&:hover {
-			color: #09f;
-		}
-	}
 }
 
 
-.nav-items {
-	height: 80px;
-	padding: 0 50px;
+.nav-desktop {
 	display: none;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid black;
-
-	a {
-		padding: 0 25px;
-		text-decoration: none;
-		color: black;
-		transition: color 0.3s;
-
-		&:hover {
-			color: #09f;
-		}
-	}
 
 	.nav-items-left {
 		display: flex;
 		align-items: center;
 
-		i {
-			margin-right: 20px;
-			font-size: 45px;
-			color: #09f;
+		.logo-ico {
+			margin: 0 25px;
 		}
 
 		input {
@@ -93,6 +75,7 @@ body {
 	.sign-up-btn {
 		height: 45px;
 		width: 120px;
+		margin-right: 50px;
 		font-size: 16px;
 		background-color: #09f;
 		border: 1px solid #09f;
@@ -109,13 +92,11 @@ body {
 }
 
 
-
-
 @media (min-width: 992px) {
 	.nav-mobile {
 		display: none;
 	}
-	.nav-items {
+	.nav-desktop {
 		display: flex;
 	}
 }
