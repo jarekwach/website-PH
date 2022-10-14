@@ -18,6 +18,11 @@ body {
   max-width: 1200px;
 }
 
+.section-title {
+  padding: 30px 20px;
+  font-weight: 400;
+}
+
 .nav-items {
   height: 80px;
   display: flex;
@@ -87,9 +92,22 @@ body {
 .products {
   height: 100vh;
 }
-.products .section-title {
-  padding: 30px 20px;
-  font-weight: 400;
+.products .product-box {
+  max-width: 800px;
+  display: flex;
+  margin-left: 20px;
+  margin: 24px 0;
+  justify-content: space-around;
+  transition: all 0.5s;
+}
+.products .product-box:hover {
+  background-color: whitesmoke;
+}
+.products .product-box img {
+  display: flex;
+  width: 82px;
+  height: 82px;
+  margin: 0 20px 0 10px;
 }
 
 @media (min-width: 992px) {
