@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 }
@@ -39,7 +43,7 @@ body {
 
 	.burger-ico {
 		padding: 0 30px;
-		font-size: 40px;
+		font-size: 36px;
 		background: none;
 		color: black;
 		border: none;
@@ -51,7 +55,6 @@ body {
 		}
 	}
 }
-
 
 .nav-desktop {
 	display: none;
@@ -91,6 +94,15 @@ body {
 	}
 }
 
+.products {
+	height: 100vh;
+
+
+	.section-title {
+		padding: 30px 20px;
+		font-weight: 400;
+	}
+}
 
 @media (min-width: 992px) {
 	.nav-mobile {

@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -36,7 +40,7 @@ body {
 }
 .nav-items .burger-ico {
   padding: 0 30px;
-  font-size: 40px;
+  font-size: 36px;
   background: none;
   color: black;
   border: none;
@@ -78,6 +82,14 @@ body {
   border: 1px solid black;
   color: #09f;
   cursor: pointer;
+}
+
+.products {
+  height: 100vh;
+}
+.products .section-title {
+  padding: 30px 20px;
+  font-weight: 400;
 }
 
 @media (min-width: 992px) {
