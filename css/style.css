@@ -119,6 +119,19 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.products .product-box .vote-btn {
+  margin: 0 15px;
+  padding: 20px 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.products .product-box .vote-btn:hover {
+  color: #09f;
+}
 .products .product-box .product-item-date {
   color: red;
 }
