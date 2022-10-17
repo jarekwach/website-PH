@@ -215,6 +215,42 @@ body {
 	}
 }
 
+.aboutus {
+	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 80px;
+	border-top: 1px solid black;
+
+	.footer-info {
+		position: relative;
+		top: 26px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.icon {
+			padding: 0 20px;
+			font-size: 24px;
+
+			i {
+				padding: 0 8px;
+				color: #09f;
+				transition: transform 0.3s;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 992px) {
 	.nav-mobile {
 		display: none;
