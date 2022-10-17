@@ -185,7 +185,7 @@ body {
   color: black;
   text-decoration: none;
 }
-.registration-page .form .login-form {
+.registration-page .form .disabled {
   display: none;
 }
 

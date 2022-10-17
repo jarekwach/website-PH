@@ -157,7 +157,6 @@ body {
 	}
 }
 
-
 .registration-page {
 	width: 360px;
 	padding: 8% 0 0;
@@ -209,12 +208,11 @@ body {
 			}
 		}
 
-		.login-form {
+		.disabled {
 			display: none;
 		}
 	}
 }
-
 
 @media (min-width: 992px) {
 	.nav-mobile {
