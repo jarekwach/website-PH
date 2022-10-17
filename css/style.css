@@ -177,11 +177,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .registration-page .form .message {
-  margin: 15px 0 0;
+  margin: 20px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
 .registration-page .form .message a {
+  font-size: 14px;
   color: black;
   text-decoration: none;
 }
