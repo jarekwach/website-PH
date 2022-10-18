@@ -1,0 +1,24 @@
+{
+	"items": [
+		{
+			"title": "Produkt 1",
+			"dateAdded": "18.10.2022",
+			"description": "opis produktu",
+			"photo": "link do zdjecia 1"
+		},
+
+		{
+			"title": "Produkt 2",
+			"dateAdded": "16.10.2022",
+			"description": "opis produktu",
+			"photo": "link do zdjecia 2"
+		},
+
+		{
+			"title": "Produkt 3",
+			"dateAdded": "15.10.2022",
+			"description": "opis produktu",
+			"photo": "link do zdjecia 3"
+		}
+	]
+}
