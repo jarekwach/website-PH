@@ -9,10 +9,17 @@ const itemDescription = document.querySelector('.product-item-description')
 const productImg = document.querySelector('.item-photo')
 const burgerBtn = document.querySelector('.burger-ico')
 const navMobileList = document.querySelector('.nav-mobile-list')
+const allHideLink = document.querySelectorAll('.nav-mobile-list a')
 
 function handleNav() {
 	navMobileList.classList.toggle('active-nav-link')
 }
+
+allHideLink.forEach((item) =>
+	item.addEventListener('click', () =>
+		navMobileList.classList.remove('active-nav-link')
+	)
+)
 
 function changeForm() {
 	loginForm.classList.toggle('disabled')
