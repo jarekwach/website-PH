@@ -3,11 +3,16 @@ const registerMsg = document.querySelector('.register-msg')
 const loginForm = document.querySelector('.login-form')
 const registerForm = document.querySelector('.register-form')
 const navLoginLink = document.querySelector('.nav-login-link')
-
 const productTitle = document.querySelector('.product-title')
 const dateAdd = document.querySelector('.product-item-date')
 const itemDescription = document.querySelector('.product-item-description')
 const productImg = document.querySelector('.item-photo')
+const burgerBtn = document.querySelector('.burger-ico')
+const navMobileList = document.querySelector('.nav-mobile-list')
+
+function handleNav() {
+	navMobileList.classList.toggle('active-nav-link')
+}
 
 function changeForm() {
 	loginForm.classList.toggle('disabled')
@@ -29,6 +34,7 @@ fetch('./items.json')
 	})
 	.catch((err) => console.error(err))
 
+burgerBtn.addEventListener('click', handleNav)
+navLoginLink.addEventListener('click', showLoginForm)
 loginMsg.addEventListener('click', changeForm)
 registerMsg.addEventListener('click', changeForm)
-navLoginLink.addEventListener('click', showLoginForm)

@@ -62,6 +62,32 @@ body {
 	}
 }
 
+.nav-mobile-list {
+	position: absolute;
+	padding: 50px;
+	height: 100vh;
+	width: 100vw;
+	left: -100vw;
+	background-image: url('../img/background.jpg');
+	transition: transform 0.3s;
+
+	a {
+		display: block;
+		font-size: 20px;
+		padding: 20px;
+		color: black;
+		text-decoration: none;
+
+		&:hover {
+			font-weight: bold;
+		}
+	}
+}
+
+.active-nav-link {
+	transform: translateX(100vw);
+}
+
 .nav-desktop {
 	display: none;
 
