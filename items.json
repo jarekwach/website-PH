@@ -3,22 +3,22 @@
 		{
 			"title": "Produkt 1",
 			"dateAdded": "18.10.2022",
-			"description": "opis produktu",
-			"photo": "link do zdjecia 1"
+			"description": "1 opis produktu 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi corrupti culpa sequi placeat esse.",
+			"photo": "https://picsum.photos/300"
 		},
 
 		{
 			"title": "Produkt 2",
 			"dateAdded": "16.10.2022",
-			"description": "opis produktu",
-			"photo": "link do zdjecia 2"
+			"description": "2 opis produktu 2  sit amet consectetur adipisicing elit. Iste commodi corrupti culpa sequi placeat esse.",
+			"photo": "https://picsum.photos/200"
 		},
 
 		{
 			"title": "Produkt 3",
 			"dateAdded": "15.10.2022",
-			"description": "opis produktu",
-			"photo": "link do zdjecia 3"
+			"description": "3 opis produktu 3 Lorem ipsum dolor adipisicing elit. Iste commodi corrupti culpa sequi placeat esse.",
+			"photo": "https://picsum.photos/400"
 		}
 	]
 }
