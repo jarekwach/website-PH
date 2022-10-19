@@ -22,8 +22,13 @@ allHideLink.forEach((item) =>
 )
 
 function changeForm() {
-	loginForm.classList.toggle('disabled')
-	registerForm.classList.toggle('disabled')
+	if (loginForm.classList.contains('disabled')) {
+		registerForm.classList.add('disabled')
+		loginForm.classList.remove('disabled')
+	} else {
+		registerForm.classList.remove('disabled')
+		loginForm.classList.add('disabled')
+	}
 }
 
 function showLoginForm() {
