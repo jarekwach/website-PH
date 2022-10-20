@@ -10,6 +10,41 @@ const productImg = document.querySelector('.item-photo')
 const burgerBtn = document.querySelector('.burger-ico')
 const navMobileList = document.querySelector('.nav-mobile-list')
 const allHideLink = document.querySelectorAll('.nav-mobile-list a')
+const allProductBox = document.querySelector('.all-products-box')
+
+const divProductBox = document.createElement('div')
+divProductBox.classList.add('product-box')
+const divProductItemPhoto = document.createElement('div')
+divProductItemPhoto.classList.add('product-item-photo')
+const imgItemPhoto = document.createElement('img')
+imgItemPhoto.classList.add('item-photo')
+const divProtuctItemBox = document.createElement('div')
+divProtuctItemBox.classList.add('product-item-box')
+const divProductItemTitle = document.createElement('div')
+divProductItemTitle.classList.add('product-item-title')
+const headingProductTitle = document.createElement('h3')
+headingProductTitle.classList.add('product-title')
+const parItemDescription = document.createElement('p')
+parItemDescription.classList.add('product-item-description')
+const productItemDate = document.createElement('div')
+productItemDate.classList.add('product-item-date')
+const buttonVoteBtn = document.createElement('button')
+buttonVoteBtn.classList.add('vote-btn')
+const iconVote = document.createElement('i')
+iconVote.classList.add('fa-regular', 'fa-thumbs-up')
+
+function addProductBox() {
+	allProductBox.append(divProductBox)
+	divProductBox.append(divProductItemPhoto, divProtuctItemBox)
+	divProductItemPhoto.append(imgItemPhoto)
+	divProtuctItemBox.append(divProductItemTitle, buttonVoteBtn)
+	divProductItemTitle.append(
+		headingProductTitle,
+		parItemDescription,
+		productItemDate
+	)
+	buttonVoteBtn.append(iconVote)
+}
 
 function handleNav() {
 	navMobileList.classList.toggle('active-nav-link')
