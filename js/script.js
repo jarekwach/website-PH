@@ -28,8 +28,12 @@ const parItemDescription = document.createElement('p')
 parItemDescription.classList.add('product-item-description')
 const productItemDate = document.createElement('div')
 productItemDate.classList.add('product-item-date')
+const divBtnBox = document.createElement('div')
+divBtnBox.classList.add('btn-box')
 const buttonVoteBtn = document.createElement('button')
 buttonVoteBtn.classList.add('vote-btn')
+const pNumbersVote = document.createElement('p')
+pNumbersVote.classList.add('number-of-votes')
 const iconVote = document.createElement('i')
 iconVote.classList.add('fa-regular', 'fa-thumbs-up')
 
@@ -41,7 +45,8 @@ function addProductBox() {
 	allProductBox.append(divProductBox)
 	divProductBox.append(divProductItemPhoto, divProtuctItemBox)
 	divProductItemPhoto.append(imgItemPhoto)
-	divProtuctItemBox.append(divProductItemTitle, buttonVoteBtn)
+	divProtuctItemBox.append(divProductItemTitle, divBtnBox)
+	divBtnBox.append(buttonVoteBtn, pNumbersVote)
 	divProductItemTitle.append(
 		headingProductTitle,
 		parItemDescription,
@@ -81,14 +86,14 @@ const addVote = () => {
 }
 
 fetch('./items.json')
-.then((res) => res.json())
-.then(function (data) {
-	productTitle.textContent = data.items[0].title
-	itemDescription.textContent = data.items[0].description
-	dateAdd.textContent = data.items[0].dateAdded
-	productImg.setAttribute('src', data.items[0].photo)
-})
-.catch((err) => console.error(err))
+	.then((res) => res.json())
+	.then(function (data) {
+		productTitle.textContent = data.items[0].title
+		itemDescription.textContent = data.items[0].description
+		dateAdd.textContent = data.items[0].dateAdded
+		productImg.setAttribute('src', data.items[0].photo)
+	})
+	.catch((err) => console.error(err))
 
 burgerBtn.addEventListener('click', handleNav)
 navLoginLink.addEventListener('click', showLoginForm)
