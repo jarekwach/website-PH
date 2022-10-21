@@ -33,6 +33,10 @@ buttonVoteBtn.classList.add('vote-btn')
 const iconVote = document.createElement('i')
 iconVote.classList.add('fa-regular', 'fa-thumbs-up')
 
+const voteBtn = document.querySelector('.vote-btn')
+const numbersOfVote = document.querySelector('.number-of-votes')
+let numVote = 0
+
 function addProductBox() {
 	allProductBox.append(divProductBox)
 	divProductBox.append(divProductItemPhoto, divProtuctItemBox)
@@ -71,17 +75,23 @@ function showLoginForm() {
 	registerForm.classList.add('disabled')
 }
 
+const addVote = () => {
+	numVote += 1
+	numbersOfVote.textContent = numVote
+}
+
 fetch('./items.json')
-	.then((res) => res.json())
-	.then(function (data) {
-		productTitle.textContent = data.items[0].title
-		itemDescription.textContent = data.items[0].description
-		dateAdd.textContent = data.items[0].dateAdded
-		productImg.setAttribute('src', data.items[0].photo)
-	})
-	.catch((err) => console.error(err))
+.then((res) => res.json())
+.then(function (data) {
+	productTitle.textContent = data.items[0].title
+	itemDescription.textContent = data.items[0].description
+	dateAdd.textContent = data.items[0].dateAdded
+	productImg.setAttribute('src', data.items[0].photo)
+})
+.catch((err) => console.error(err))
 
 burgerBtn.addEventListener('click', handleNav)
 navLoginLink.addEventListener('click', showLoginForm)
 loginMsg.addEventListener('click', changeForm)
 registerMsg.addEventListener('click', changeForm)
+voteBtn.addEventListener('click', addVote)
