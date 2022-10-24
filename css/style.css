@@ -233,6 +233,10 @@ body {
   display: none;
 }
 
+.offers {
+  text-align: center;
+}
+
 .aboutus {
   padding: 0 20px;
   text-align: center;
