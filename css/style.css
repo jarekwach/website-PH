@@ -31,6 +31,11 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid #000000;
 }
+@media (min-width: 992px) {
+  .nav-items {
+    display: none;
+  }
+}
 .nav-items a {
   padding: 0 25px;
   text-decoration: none;
@@ -85,6 +90,11 @@ body {
 .nav-desktop {
   display: none;
 }
+@media (min-width: 992px) {
+  .nav-desktop {
+    display: flex;
+  }
+}
 .nav-desktop .nav-items-left {
   display: flex;
   align-items: center;
@@ -132,7 +142,7 @@ body {
 }
 .products .product-box .product-title {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .products .product-box .item-photo {
   padding-top: 5px;
@@ -165,7 +175,7 @@ body {
 }
 .products .product-box .product-item-date {
   font-size: 12px;
-  color: #0099ff;
+  color: #ca442d;
 }
 
 .registration-page {
@@ -191,7 +201,8 @@ body {
   padding: 15px;
   font-size: 14px;
 }
-.registration-page .form .register-btn, .registration-page .form .login-btn {
+.registration-page .form .register-btn,
+.registration-page .form .login-btn {
   text-transform: uppercase;
   width: 100%;
   border: none;
@@ -202,7 +213,8 @@ body {
   background-color: #0099ff;
   transition: all 0.3s;
 }
-.registration-page .form .register-btn:hover, .registration-page .form .login-btn:hover {
+.registration-page .form .register-btn:hover,
+.registration-page .form .login-btn:hover {
   background-color: #0073ff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -222,6 +234,7 @@ body {
 }
 
 .aboutus {
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -246,20 +259,15 @@ body {
   padding: 0 20px;
   font-size: 24px;
 }
-.footer .footer-info .icon i {
+.footer .footer-info .icon .fa-phone,
+.footer .footer-info .icon .fa-facebook,
+.footer .footer-info .icon .fa-at {
   padding: 0 8px;
   color: #0099ff;
   transition: transform 0.3s;
 }
-.footer .footer-info .icon i:hover {
+.footer .footer-info .icon .fa-phone:hover,
+.footer .footer-info .icon .fa-facebook:hover,
+.footer .footer-info .icon .fa-at:hover {
   transform: scale(1.2);
-}
-
-@media (min-width: 992px) {
-  .nav-mobile {
-    display: none;
-  }
-  .nav-desktop {
-    display: flex;
-  }
 }/*# sourceMappingURL=style.css.map */

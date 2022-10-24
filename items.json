@@ -17,8 +17,22 @@
 		{
 			"title": "Produkt 3",
 			"dateAdded": "15.10.2022",
-			"description": "3 opis produktu 3 Lorem ipsum dolor adipisicing elit. Iste commodi corrupti culpa sequi placeat esse.",
+			"description": "3 opis produktu 3 Lorem ipsum dolor adipisicing elit. Iste commodi corrupti culpa sequi placeat esse. Lorem ipsum dolor adipisicing elit. Iste commodi.",
 			"photo": "https://picsum.photos/400"
+		},
+
+		{
+			"title": "Produkt 4",
+			"dateAdded": "06.10.2022",
+			"description": "4 opis produktu 4 Lorem ipsum dolor adipisicing elit. Iste commodi  culpa sequi  esse. Iste commodi  culpa sequi  esse. Iste commodi  culpa sequi  esse. Iste commodi  culpa sequi  esse.",
+			"photo": "https://picsum.photos/500"
+		},
+
+		{
+			"title": "Produkt 5",
+			"dateAdded": "01.10.2022",
+			"description": "5 opis produktu 5 Lorem ipsum dolor adipisicing elit. Iste commodi corrupti culpa sequi placeat esse.",
+			"photo": "https://picsum.photos/600"
 		}
 	]
 }
