@@ -91,7 +91,7 @@ body {
 .nav-desktop .nav-items-left .logo-ico {
   margin: 0 20px;
 }
-.nav-desktop .nav-items-left input {
+.nav-desktop .nav-items-left .input-search {
   height: 35px;
   background-color: rgba(0, 0, 0, 0.057);
   border: 1px solid rgba(0, 0, 0, 0.141);
@@ -129,11 +129,11 @@ body {
   border-radius: 8px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.085);
 }
-.products .product-box h3 {
+.products .product-box .product-title {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.products .product-box img {
+.products .product-box .item-photo {
   padding-top: 5px;
   width: 82px;
   height: 86px;
@@ -180,7 +180,8 @@ body {
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.registration-page .form input {
+.registration-page .form .register-input,
+.registration-page .form .login-input {
   outline: none;
   background: #f2f2f2;
   width: 100%;
@@ -189,7 +190,7 @@ body {
   padding: 15px;
   font-size: 14px;
 }
-.registration-page .form button {
+.registration-page .form .register-btn {
   text-transform: uppercase;
   width: 100%;
   border: none;
@@ -200,7 +201,7 @@ body {
   background-color: #0099ff;
   transition: all 0.3s;
 }
-.registration-page .form button:hover {
+.registration-page .form .register-btn:hover {
   background-color: #0073ff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -209,7 +210,8 @@ body {
   color: #b3b3b3;
   font-size: 12px;
 }
-.registration-page .form .message a {
+.registration-page .form .message .register-msg,
+.registration-page .form .message .login-msg {
   font-size: 14px;
   color: #000000;
   text-decoration: none;
@@ -222,7 +224,7 @@ body {
   text-align: center;
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100vw;
@@ -230,7 +232,7 @@ footer {
   border-top: 1px solid #000000;
   background-color: rgba(34, 30, 30, 0.173);
 }
-footer .footer-info {
+.footer .footer-info {
   position: relative;
   top: 16px;
   text-align: center;
@@ -239,16 +241,16 @@ footer .footer-info {
   justify-content: center;
   font-size: 14px;
 }
-footer .footer-info .icon {
+.footer .footer-info .icon {
   padding: 0 20px;
   font-size: 24px;
 }
-footer .footer-info .icon i {
+.footer .footer-info .icon i {
   padding: 0 8px;
   color: #0099ff;
   transition: transform 0.3s;
 }
-footer .footer-info .icon i:hover {
+.footer .footer-info .icon i:hover {
   transform: scale(1.2);
 }
 
