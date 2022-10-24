@@ -64,6 +64,7 @@ body {
   width: 100vw;
   left: -100vw;
   background-image: url("../img/background.jpg");
+  background-position-y: -80px;
   transition: transform 0.3s;
 }
 .nav-mobile-list a {
@@ -190,7 +191,7 @@ body {
   padding: 15px;
   font-size: 14px;
 }
-.registration-page .form .register-btn {
+.registration-page .form .register-btn, .registration-page .form .login-btn {
   text-transform: uppercase;
   width: 100%;
   border: none;
@@ -201,7 +202,7 @@ body {
   background-color: #0099ff;
   transition: all 0.3s;
 }
-.registration-page .form .register-btn:hover {
+.registration-page .form .register-btn:hover, .registration-page .form .login-btn:hover {
   background-color: #0073ff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }

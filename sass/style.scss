@@ -71,6 +71,7 @@ body {
 	width: 100vw;
 	left: -100vw;
 	background-image: url('../img/background.jpg');
+	background-position-y: -80px;
 	transition: transform 0.3s;
 
 	a {
@@ -215,7 +216,7 @@ body {
 			font-size: 14px;
 		}
 
-		.register-btn {
+		.register-btn, .login-btn {
 			text-transform: uppercase;
 			width: 100%;
 			border: none;

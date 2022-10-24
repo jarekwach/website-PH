@@ -1,4 +1,4 @@
-import { getProducts } from './get-products.js'
+// import { getProducts } from './get-products.js'
 
 const loginMsg = document.querySelector('.login-msg')
 const registerMsg = document.querySelector('.register-msg')
